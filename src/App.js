@@ -9,7 +9,7 @@ import {
 import "./styles.css";
 import Home from "./pages/Home";
 import Forms from "./pages/Forms";
-import Tables from "./pages/Tables";
+import Table from "./pages/Tables";
 
 import NotFound from "./pages/NotFound";
 
@@ -53,7 +53,7 @@ export default function App() {
         content={
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tables" element={<Tables />} />
+            <Route path="/tables" element={<Table/>} />
             <Route path="/forms" element={<Forms />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
