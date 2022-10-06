@@ -18,3 +18,4 @@ Cons
 - Can't figure out how to do a flexbox. 
 - cloudscape is kind of new so hard to find good results when searching a problem.
 - Tables? kind of hard
+- Offers client side and server side data fetching but useCollection hook for fetching data is kind of hard to use

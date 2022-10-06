@@ -5,6 +5,8 @@ import {
   SideNavigation,
   TopNavigation
 } from "@cloudscape-design/components";
+import { applyMode, applyDensity, Density, Mode } from '@cloudscape-design/global-styles';
+
 
 import "./styles.css";
 import Home from "./pages/Home";
@@ -79,6 +81,11 @@ function returnTopNav() {
       utilities={[
         {
           type: "button",
+          text: "Dark Mode",
+          onClick: () => applyMode(Mode.Dark)
+        },
+        {
+          type: "button",
           text: "Link",
           href: "https://example.com/",
           external: true,
@@ -138,7 +145,9 @@ function returnTopNav() {
                 }
               ]
             },
-            { id: "signout", text: "Sign out" }
+            { id: "signout", text: "Sign out" },
+            {id:"mode" , text:"Mode"}
+
           ]
         }
       ]}
